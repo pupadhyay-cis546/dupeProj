@@ -66,7 +66,15 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gtm-RU-egh">
                                 <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="EasyNote" id="D27-tV-ZQW">
+                                    <navigationItem id="D27-tV-ZQW">
+                                        <nil key="title"/>
+                                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="YeQ-2x-lN6">
+                                            <rect key="frame" x="40" y="7" width="158" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
                                         <rightBarButtonItems>
                                             <barButtonItem style="plain" id="kQY-hw-XJ9">
                                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="cEQ-pn-HIh">
@@ -127,10 +135,40 @@
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </segmentedControl>
                     </navigationItem>
+                    <connections>
+                        <segue destination="1uH-j3-VeO" kind="showDetail" identifier="detailSegue" id="EOA-js-vaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBN-Eu-eeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2075.625" y="61.267605633802816"/>
+        </scene>
+        <!--DetailsVC-->
+        <scene sceneID="LHm-mA-Xod">
+            <objects>
+                <viewController id="1uH-j3-VeO" customClass="detailsVC" customModule="FinalProject_EasyNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9p2-Ly-OgD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tky-eU-mdy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nSW-uU-rlH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEB-Kh-Kj0">
+                                <rect key="frame" x="72" y="70" width="193" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="koB-Pw-0eH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3022.5" y="-201.7605633802817"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hFe-qT-keB">

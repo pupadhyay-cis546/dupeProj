@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		911B988E1EAF406900D71FD9 /* taskListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911B988D1EAF406900D71FD9 /* taskListVC.swift */; };
+		915AFEAD1EB0B05E00124EB9 /* detailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AFEAC1EB0B05E00124EB9 /* detailsVC.swift */; };
 		91EB4F651EAF09FE005EEAF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EB4F641EAF09FE005EEAF9 /* AppDelegate.swift */; };
 		91EB4F671EAF09FE005EEAF9 /* drawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EB4F661EAF09FE005EEAF9 /* drawVC.swift */; };
 		91EB4F6A1EAF09FE005EEAF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91EB4F681EAF09FE005EEAF9 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		911B988D1EAF406900D71FD9 /* taskListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taskListVC.swift; sourceTree = "<group>"; };
+		915AFEAC1EB0B05E00124EB9 /* detailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailsVC.swift; sourceTree = "<group>"; };
 		91EB4F611EAF09FE005EEAF9 /* FinalProject_EasyNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject_EasyNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EB4F641EAF09FE005EEAF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91EB4F661EAF09FE005EEAF9 /* drawVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawVC.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				91EB4F701EAF09FE005EEAF9 /* LaunchScreen.storyboard */,
 				91EB4F731EAF09FE005EEAF9 /* Info.plist */,
 				91EB4F6B1EAF09FE005EEAF9 /* FinalProject_EasyNote.xcdatamodeld */,
+				915AFEAC1EB0B05E00124EB9 /* detailsVC.swift */,
 			);
 			path = FinalProject_EasyNote;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				91EB4F671EAF09FE005EEAF9 /* drawVC.swift in Sources */,
 				91EB4F6D1EAF09FE005EEAF9 /* FinalProject_EasyNote.xcdatamodeld in Sources */,
+				915AFEAD1EB0B05E00124EB9 /* detailsVC.swift in Sources */,
 				91EB4F651EAF09FE005EEAF9 /* AppDelegate.swift in Sources */,
 				911B988E1EAF406900D71FD9 /* taskListVC.swift in Sources */,
 			);
