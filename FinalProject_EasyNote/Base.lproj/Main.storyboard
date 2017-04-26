@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KQc-Ky-H3C">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DrawVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="drawVC" customModule="FinalProject_EasyNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lIj-HY-dfQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r37-we-cU9">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Draw Something" id="Gfx-X8-WmJ"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lIj-HY-dfQ" secondAttribute="trailing" id="8Ss-Kp-3AU"/>
+                            <constraint firstAttribute="trailing" secondItem="r37-we-cU9" secondAttribute="trailing" id="9wc-tI-mwC"/>
+                            <constraint firstItem="r37-we-cU9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fnh-7R-7gf"/>
+                            <constraint firstItem="r37-we-cU9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gYh-Eq-GFf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lIj-HY-dfQ" secondAttribute="bottom" id="h89-W2-fdm"/>
+                            <constraint firstItem="lIj-HY-dfQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qJK-cj-ghL"/>
+                            <constraint firstItem="lIj-HY-dfQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yCV-n9-ME3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="lIj-HY-dfQ" id="lNc-qx-rcQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.71875" y="138.8671875"/>
+        </scene>
+        <!--Task ListVC-->
+        <scene sceneID="8Jx-Bq-u1j">
+            <objects>
+                <viewController id="7Hk-Em-lZQ" customClass="taskListVC" customModule="FinalProject_EasyNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pKh-FO-QHo"/>
+                        <viewControllerLayoutGuide type="bottom" id="6V2-dd-LUd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7S9-qB-bfw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gtm-RU-egh">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="EasyNote" id="D27-tV-ZQW">
+                                        <rightBarButtonItems>
+                                            <barButtonItem style="plain" id="kQY-hw-XJ9">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="cEQ-pn-HIh">
+                                                    <rect key="frame" x="268" y="7" width="36" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Draw">
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment content="Draw">
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="system" size="15"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="BYZ-38-t0r" kind="show" id="58g-T0-ihc"/>
+                                                    </connections>
+                                                </button>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" id="cKp-Nd-hf0">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mjn-zI-Hz5">
+                                                    <rect key="frame" x="189" y="7" width="71" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Note"/>
+                                                </button>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wtT-Hc-Lcq">
+                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7Hk-Em-lZQ" id="z8g-tU-n7Z"/>
+                                    <outlet property="delegate" destination="7Hk-Em-lZQ" id="bxC-hg-A0F"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gtm-RU-egh" firstAttribute="leading" secondItem="7S9-qB-bfw" secondAttribute="leading" id="Xrw-R1-m1l"/>
+                            <constraint firstItem="6V2-dd-LUd" firstAttribute="top" secondItem="Gtm-RU-egh" secondAttribute="bottom" constant="460" id="p6D-O7-VWM"/>
+                            <constraint firstAttribute="trailing" secondItem="Gtm-RU-egh" secondAttribute="trailing" id="rRI-OW-gFK"/>
+                            <constraint firstItem="Gtm-RU-egh" firstAttribute="top" secondItem="pKh-FO-QHo" secondAttribute="bottom" id="skW-Sx-SIN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="E4e-KF-56v">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="jUS-kT-bfC">
+                            <rect key="frame" x="8" y="7" width="304" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Newest"/>
+                                <segment title="Title"/>
+                            </segments>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </segmentedControl>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBN-Eu-eeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2075.625" y="61.267605633802816"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hFe-qT-keB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KQc-Ky-H3C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bln-Xi-7A6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Hk-Em-lZQ" kind="relationship" relationship="rootViewController" id="GzN-Zh-d5g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnT-gL-c3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="-515"/>
+        </scene>
+    </scenes>
+</document>
